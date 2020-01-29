@@ -15,7 +15,8 @@ const titleCased = () => {
   return tutorials.map(function(title) {
     let splitted = title.split(" ")
     for(let i = 0; i < splitted.length; i++) {
-      splitted[i] = splitted[i].charAt(0).toUpperCase
+      splitted[i] = splitted[i].charAt(0).toUpperCase() + splitted[i].substring(1)
+      
     }
   })
 }
